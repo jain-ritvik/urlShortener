@@ -2,6 +2,14 @@
 
 A simple URL shortener application built using Flask. It allows users to enter a long URL and receive a shortened version that redirects to the original URL.
 
+## Project Screenshots
+
+### Basic Page
+![Basic Page](basic.png)
+
+### Result Page
+![Result Page](result.png)
+
 ## Features
 
 - Shortens long URLs into a 6-character code
