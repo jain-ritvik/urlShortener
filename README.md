@@ -5,7 +5,7 @@ A simple URL shortener application built using Flask. It allows users to enter a
 ## Project Screenshots
 
 ### Basic Page
-![Basic Page](basic.png)
+![Home Page](home.png)
 
 ### Result Page
 ![Result Page](result.png)
