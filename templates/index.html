@@ -8,15 +8,26 @@
 </head>
 <body class="bg-light">
     
+    <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold">🔗 URL Shortener</a>
+        <a href="/history" class="btn btn-primary"> View History </a>
+    </div>
+
+</nav>
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="card shadow-lg p-4" style="width: 100%; max-width: 700px;">
-            <h3 class="text-center mb-4">🔗 URL Shortener</h3>
             <div class="container-fluid justify-content-center">
             <form class="d-flex" method="POST">
             <input class="form-control me-2" type="text" name ="url" placeholder="Enter url to shorten" required>
             <button class="btn btn-primary" type="submit">Shorten</button>
             </form>
             </div>
+            {% if error %}
+        <div class="alert alert-danger mt-3 text-center">
+        {{ error }}
+        </div>
+            {% endif %}
           {% if short_url %}
         <div class="container alert alert-success mt-3 text-center">
             <p class="b-1 fw-semibold">Short URL:</p>
